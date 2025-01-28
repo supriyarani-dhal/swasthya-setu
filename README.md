@@ -23,11 +23,10 @@ Follow the steps below to get your local copy of this project up and running. Th
 ### 1. Clone the Repository
 
 Clone the repository to your local machine:
-
 ```bash
 git clone https://github.com/your-username/swasthya-setu.git
 cd swasthya-setu
-
+```
 
 You will see two directories:
 - `frontend/`: Contains the React app (UI and client-side logic).
