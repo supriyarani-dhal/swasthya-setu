@@ -123,7 +123,6 @@ yarn start
 
 This will start the frontend React application on `http://localhost:3000`.
 
-### 6. Folder Structure
 
 ```
 swasthya-setu/
@@ -150,7 +149,7 @@ If you'd like to contribute to this project, feel free to open an issue or submi
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [https://suusri.web.app](SUUSRI) file for details.
 
 ### Key Sections Breakdown:
 1. **Frontend Setup**: Install dependencies for the React app inside the `frontend/` folder.
