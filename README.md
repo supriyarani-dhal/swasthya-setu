@@ -13,8 +13,8 @@
 
 - Frontend: React
 - Backend: Node.js, Express
-- Database: MongoDB / Firebase (Depending on your setup)
-- AI Features: Integration with AI-based APIs or in-house models (mention any specifics)
+- Database: MongoDB / Firebase 
+- AI Features: Integration with AI-based Gemini APIs 
 
 ## Installation
 
