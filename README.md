@@ -124,25 +124,6 @@ yarn start
 This will start the frontend React application on `http://localhost:3000`.
 
 
-```
-swasthya-setu/
-│
-├── frontend/                # React frontend
-│   ├── public/              # Public assets and index.html
-│   ├── src/                 # Source files for frontend
-│   └── .env                 # Frontend environment variables
-│
-├── server/                  # Backend logic
-│   ├── controllers/         # API controllers
-│   ├── models/              # Mongoose models or database schemas
-│   ├── routes/              # API routes
-│   ├── .env                 # Backend environment variables
-│   └── app.js               # Main backend entry point
-│
-├── .gitignore               # Git ignore rules
-└── README.md                # This file
-```
-
 ## Contributing
 
 If you'd like to contribute to this project, feel free to open an issue or submit a pull request. Your contributions are highly appreciated!
