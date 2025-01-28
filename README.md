@@ -1,70 +1,160 @@
-# Getting Started with Create React App
+# Swasthya Setu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Swasthya Setu** is a comprehensive healthcare application designed to bridge the gap between medical services and people, ensuring everyone has access to reliable health information and services at their fingertips.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Blood Donation**: Find nearby blood donation centers, track donations, and receive blood on time.
+- **Consultation with Experts**: Connect with doctors and healthcare providers online for consultations.
+- **AI Doctor Assistance**: Use AI-powered tools to get medical advice based on symptoms or conditions.
+- **Medicine Shop**: Browse a range of medicines and order them conveniently from online pharmacies.
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Frontend: React
+- Backend: Node.js, Express
+- Database: MongoDB / Firebase (Depending on your setup)
+- AI Features: Integration with AI-based APIs or in-house models (mention any specifics)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow the steps below to get your local copy of this project up and running. The application consists of two main parts: the frontend and the backend server.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Clone the Repository
 
-### `npm run build`
+Clone the repository to your local machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+git clone https://github.com/your-username/swasthya-setu.git
+cd swasthya-setu
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+You will see two directories:
+- `frontend/`: Contains the React app (UI and client-side logic).
+- `server/`: Contains the backend server (API and database handling).
 
-### `npm run eject`
+### 2. Setting Up the Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Change to the `frontend/` directory and install the required dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+cd frontend
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Or if you’re using yarn:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+yarn install
+```
 
-## Learn More
+### 3. Setting Up the Server (Backend)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Change to the `server/` directory and install the required dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd ../server
+npm install
+```
 
-### Code Splitting
+Or if you’re using yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+yarn install
+```
 
-### Analyzing the Bundle Size
+### 4. Set Up Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+You’ll need to set up your environment variables in both frontend and server directories.
 
-### Making a Progressive Web App
+#### Frontend (.env)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+In the `frontend/` directory, create a `.env` file if it doesn't exist already. Add any frontend-specific configuration, like API endpoints.
 
-### Advanced Configuration
+Example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```env
+REACT_APP_API_URL=http://localhost:5000/api
+```
 
-### Deployment
+#### Server (.env)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+In the `server/` directory, create a `.env` file with your backend configuration, such as the MongoDB URI and other API keys.
 
-### `npm run build` fails to minify
+Example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```env
+MONGO_URI=your-mongo-db-uri
+PORT=5000
+```
+
+### 5. Running the Application
+
+First, you need to start the backend server, and then you can run the frontend.
+
+#### Start the Server (Backend)
+
+In the `server/` directory:
+
+```bash
+npm start
+```
+
+Or using yarn:
+
+```bash
+yarn start
+```
+
+This will start the backend server on `http://localhost:5000`.
+
+#### Start the Frontend (React)
+
+In the `frontend/` directory:
+
+```bash
+npm start
+```
+
+Or using yarn:
+
+```bash
+yarn start
+```
+
+This will start the frontend React application on `http://localhost:3000`.
+
+### 6. Folder Structure
+
+```
+swasthya-setu/
+│
+├── frontend/                # React frontend
+│   ├── public/              # Public assets and index.html
+│   ├── src/                 # Source files for frontend
+│   └── .env                 # Frontend environment variables
+│
+├── server/                  # Backend logic
+│   ├── controllers/         # API controllers
+│   ├── models/              # Mongoose models or database schemas
+│   ├── routes/              # API routes
+│   ├── .env                 # Backend environment variables
+│   └── app.js               # Main backend entry point
+│
+├── .gitignore               # Git ignore rules
+└── README.md                # This file
+```
+
+## Contributing
+
+If you'd like to contribute to this project, feel free to open an issue or submit a pull request. Your contributions are highly appreciated!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Key Sections Breakdown:
+1. **Frontend Setup**: Install dependencies for the React app inside the `frontend/` folder.
+2. **Server Setup**: Install dependencies for the backend server inside the `server/` folder.
+3. **Environment Variables**: Ensure environment variables are set both for frontend and backend in `.env` files.
+4. **Running the Project**: Instructions to run the frontend and backend servers.
